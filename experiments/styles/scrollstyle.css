@@ -1,5 +1,6 @@
 body {
     background: red;
-    margin: 400vh;
+    margin: 700vh;
     transition: all 0.5s ease;
+    color: white;
   }
