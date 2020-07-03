@@ -1,5 +1,12 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    
+}
+
 html, body {
     margin:0px;
+    padding: 0px;
     height:100%;
     font-family: 'Roboto', sans-serif;
   }
@@ -29,13 +36,81 @@ body{
 }
 
 .wrapper{
+    margin-left: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
+
 .inner{
-    margin: 0 20% 0 2% 0%;
     font-size: 150%;
 }
 
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    background-color: #2F314F;
+    position: fixed;
+    transition: 200ms ease;
+}
+
+.navbar:hover{
+    width: 11rem;
+}
+
+.navbar:hover .navtext{
+    display: block;
+}
+
+.navbarnav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.navitem{
+    width: 100%;
+}
+
+.navitem:last-child{
+    margin-top: auto;
+}
+
+.navlink{
+    color: #82849A;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    transition: 600ms;
+    filter: grayscale(100%) opacity(0.7);
+}
+.navlink:hover{
+    color: #4C73A4;
+    filter: grayscale(0%) opacity(1);
+    background: #1d1f31;
+    
+}
+
+.navlink:focus{
+    outline: none;
+}
+
+.svg-inline--fa{
+    color: #4C73A4;
+    transition: 600ms;
+}
+
+.navlink svg{
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navtext{
+    display: none;
+}
