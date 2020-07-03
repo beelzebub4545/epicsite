@@ -1,6 +1,44 @@
+:root{
+  font-family: 'Roboto', sans-serif;
+  font-size: 64px;
+  
+}
+
 body {
-    background: red;
-    margin: 700vh;
-    transition: all 0.5s ease;
-    color: white;
+    background: rgb(102, 0, 0);
+    transition: all 1s ease;
+    color: #2e363b;
+    font-weight: 700;
+    text-align: center;
+    
+  }
+
+
+  .text-div{
+    margin: 45vh auto;
+  }
+
+  #red{
+    color: red;
+
+  }
+
+  #orange{
+    color:orange;
+  }
+
+  #yellow{
+    color: yellow;
+  }
+
+  #green{
+    color: green;
+  }
+
+  #blue{
+    color: blue;
+  }
+
+  #purple{
+    color: purple;
   }
