@@ -1,44 +1,40 @@
-:root{
-  font-family: 'Roboto', sans-serif;
-  font-size: 64px;
-  
+:root {
+	font-family: 'Roboto', sans-serif;
+	font-size: 64px;
 }
 
 body {
-    background: rgb(102, 0, 0);
-    transition: all 1s ease;
-    color: #2e363b;
-    font-weight: 700;
-    text-align: center;
-    
-  }
+	background: rgb(102, 0, 0);
+	transition: all 1s ease;
+	color: #2e363b;
+	font-weight: 700;
+	text-align: center;
+}
 
+.text-div {
+	margin: 45vh auto;
+}
 
-  .text-div{
-    margin: 45vh auto;
-  }
+#red {
+	color: red;
+}
 
-  #red{
-    color: red;
+#orange {
+	color: orange;
+}
 
-  }
+#yellow {
+	color: yellow;
+}
 
-  #orange{
-    color:orange;
-  }
+#green {
+	color: green;
+}
 
-  #yellow{
-    color: yellow;
-  }
+#blue {
+	color: blue;
+}
 
-  #green{
-    color: green;
-  }
-
-  #blue{
-    color: blue;
-  }
-
-  #purple{
-    color: purple;
-  }
+#purple {
+	color: purple;
+}

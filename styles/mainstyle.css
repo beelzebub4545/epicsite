@@ -1,26 +1,36 @@
-:root{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    
+:root {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 
-html, body {
-    margin:0px;
-    padding: 0px;
-    height:100%;
-    font-family: 'Roboto', sans-serif;
-  }
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+}
 
-body{
-    text-align: center;
-    /* display: flex;
+body {
+	text-align: center;
+	/* display: flex;
     justify-content: center;
     align-items: center; */
-    display: inline;
-    size: 400%;
-	background: linear-gradient(-45deg, #f82323, #ff6823, #32db2c, #2326d5, #7822e9);
+	display: inline;
+	size: 400%;
+	background: linear-gradient(-45deg, #1b2640, #a6a17d);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
+}
+
+::selection {
+	background-color: #9b9b9b3b;
+	color: black;
+}
+
+::-moz-selection {
+	background-color: #9b9b9b3b;
+	color: black;
 }
 
 @keyframes gradient {
@@ -34,109 +44,93 @@ body{
 		background-position: 0% 50%;
 	}
 }
-
-.wrapper{
-    margin-left: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper {
+	margin-left: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-.inner{
-    font-size: 150%;
+.inner {
+	font-size: 150%;
 }
-
-.navbar{
-    width: 5rem;
-    height: 100vh;
-    background-color: #2F314F;
-    position: fixed;
-    transition: 200ms ease;
+.navbar {
+	width: 5rem;
+	height: 100vh;
+	background-color: #2f314f;
+	position: fixed;
+	transition: 200ms ease;
 }
-
-.navbar:hover{
-    width: 11rem;
+.navbar:hover {
+	width: 11rem;
 }
-
-.navbar:hover .navtext{
-    display: block;
+.navbar:hover .navtext {
+	display: block;
 }
-
-.navbarnav{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
+.navbarnav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
 }
-
-.navitem{
-    width: 100%;
+.navitem {
+	width: 100%;
 }
-
-.navitem:last-child{
-    margin-top: auto;
+.navitem:last-child {
+	margin-top: auto;
 }
-
-.navlink{
-    padding-top: 0.5rem;
-    padding-bottom: 0,5rem;
-    color: #82849A;
-    display: inline-block;
-    height: 5rem;
-    text-decoration: none;
-    transition: 600ms;
-    filter: grayscale(100%) opacity(0.7);
+.navlink {
+	padding-top: 1rem;
+	padding-bottom: 0, 5rem;
+	color: #82849a;
+	display: inline-block;
+	height: 5rem;
+	text-decoration: none;
+	transition: 600ms;
+	filter: grayscale(100%) opacity(0.7);
 }
-.navlink:hover{
-    padding: 0.5rem 3rem 0rem 3em;
-    color: #4C73A4;
-    filter: grayscale(0%) opacity(1);
-    background: #1d1f31;
+.navlink:hover {
+	padding: 1rem 3rem 0rem 3em;
+	color: #4c73a4;
+	filter: grayscale(0%) opacity(1);
+	background: #1d1f31;
 }
-
-.navlink:focus{
-    outline: none;
+.navlink:focus {
+	outline: none;
 }
-
-.svg-inline--fa{
-    color: #4C73A4;
-    transition: 600ms;
+.svg-inline--fa {
+	color: #4c73a4;
+	transition: 600ms;
 }
-
-.navlink svg{
-    width: 2rem;
-    min-width: 2rem;
-    margin: 0 1.5rem;
+.navlink svg {
+	width: 2rem;
+	min-width: 2rem;
+	margin: 0 1.5rem;
 }
-
-.navtext{
-    display: none;
+.navtext {
+	display: none;
 }
-
-.tooltip{
-    display: inline-block;
+.tooltip {
+	display: inline-block;
 }
 /* Tooltip text */
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-   
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    left: 105%;
-    top: -1rem;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+	left: 105%;
+	top: -1rem;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
